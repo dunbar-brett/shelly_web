@@ -1,0 +1,29 @@
+{
+  "name": "shelly_web",
+  "version": "1.0.0",
+  "description": "Shellys website",
+  "author": "Brett Dunbar",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "test": "ava"
+  },
+  "dependencies": {
+    "cross-env": "^5.2.0",
+    "nuxt": "^2.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9",
+    "autoprefixer": "^8.6.4",
+    "tailwindcss": "^0.7.0",
+    "@vue/test-utils": "^1.0.0-beta.27",
+    "ava": "^1.0.1",
+    "browser-env": "^3.2.5",
+    "require-extension-hooks": "^0.3.3",
+    "require-extension-hooks-babel": "^0.1.1",
+    "require-extension-hooks-vue": "^2.0.0"
+  }
+}
