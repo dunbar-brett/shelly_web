@@ -6,7 +6,7 @@
                        :src='logo'
                        class="logo">
             </nuxt-link>
-            <ul>
+            <ul class="nav pull-right">
                 <li>
                     Portfolio
                     <ul>
@@ -21,12 +21,12 @@
         </nav>
     </header>
 </template>
-<style>
+<style lang="scss">
     .main-header {
         background-color: green;
 
         .logo{
-
+            width: 25%;
         }
     }
 </style>
