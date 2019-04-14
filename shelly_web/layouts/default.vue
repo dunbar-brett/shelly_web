@@ -4,15 +4,18 @@
         <main class="main-content">
             <nuxt/>
         </main>
+        <TheFooter/>
     </div>
 </template>
 
 <script>
 import TheHeader from "~/components/TheHeader.vue";
+import TheFooter from "~/components/TheFooter.vue";
 
 export default {
     components: {
-        TheHeader
+        TheHeader,
+        TheFooter
     }
 };
 </script>
@@ -38,7 +41,6 @@ html {
 }
 
 .main-content {
-    margin-top: 4.5rem;
     background-color: yellow;
 }
 </style>
