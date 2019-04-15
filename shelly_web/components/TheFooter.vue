@@ -1,7 +1,9 @@
 <template>
-    <div class="footer">
-        I am a footer
-    </div>
+    <section class="footer row align-items-center">
+        <div class="col text-center">
+            &copy; Copyright 2019, Shelly Jo Weasel
+        </div>
+    </section>
 </template>
 
 <style>

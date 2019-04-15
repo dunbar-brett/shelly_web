@@ -1,6 +1,6 @@
 <template>
     <header class="main-header">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-light sjw-navbar">
             <div class="d-flex flex-grow-1">
                 <span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
                 <nuxt-link to='/'
@@ -9,12 +9,15 @@
                        class="navbar-brand logo">
                 </nuxt-link>
                 <div class="w-100 text-right">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar7">
+                    <button class="navbar-toggler" type="button"
+                            data-toggle="collapse" data-target="#myNavbar7">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 </div>
             </div>
-            <div class="collapse navbar-collapse flex-grow-1 text-center" id="myNavbar7">
+            <div class="collapse navbar-collapse flex-grow-1 
+                        text-lg-center text-sm-right sjw-nav-items"
+                 id="myNavbar7">
                 <ul class="navbar-nav ml-auto flex-nowrap">
                     <li class="nav-item sjw-nav-item sjw-dropdown">
                         <a class="nav-link sjw-dropbtn">
@@ -26,7 +29,9 @@
                         </div>
                     </li>
                     <li class="nav-item sjw-nav-item">
-                        <a href="#" class="nav-link">About</a>
+                        <nuxt-link class="nav-link"
+                                   tag='a'
+                                   to='/about'>About</nuxt-link>
                     </li>
                     <li class="nav-item sjw-nav-item">
                         <a href="https://society6.com/shellyweasel" 
@@ -36,7 +41,9 @@
                         </a>
                     </li>
                     <li class="nav-item sjw-nav-item">
-                        <a href="#" class="nav-link">Contact</a>
+                        <nuxt-link class="nav-link"
+                                   tag='a'
+                                   to='/contact'>Contact</nuxt-link>
                     </li>
                 </ul>
                 <div class="social-media-icons">
@@ -55,42 +62,50 @@
             height: 25%
         }
 
-        .sjw-nav-item {
-            width: 8rem;
+        .sjw-navbar {
+            background-color: white;
         }
-
-        .sjw-dropdown {
-            &:hover {
-                background: rgba(145, 216, 221, .8);
+        
+        .sjw-nav-items {
+            
+            .sjw-nav-item {
+                width: 8rem;
             }
-        }
 
-        .sjw-dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: rgba(145, 216, 221, .8);
-            min-width: 8rem;
-            //box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-
-            .sjw-dropdown-content-item {
-                float: none;
-                color: black;
-                padding: 12px 16px;
-                text-decoration: none;
-                display: block;
-                text-align: left;
-
+            .sjw-dropdown {
                 &:hover {
-                    //background-color: rgba(145, 216, 221, .8);
-                    color: white;
+                    background: rgba(145, 216, 221, .8);
                 }
             }
+
+            .sjw-dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: rgba(145, 216, 221, .8);
+                min-width: 8rem;
+                //box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+
+                .sjw-dropdown-content-item {
+                    float: none;
+                    color: black;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    display: block;
+                    text-align: left;
+
+                    &:hover {
+                        //background-color: rgba(145, 216, 221, .8);
+                        color: white;
+                    }
+                }
+            }
+
+            .sjw-dropdown:hover .sjw-dropdown-content {
+                display: block;
+            }
         }
 
-        .sjw-dropdown:hover .sjw-dropdown-content {
-            display: block;
-        }
 
         .social-media-icons {
             background-color: lightgrey;

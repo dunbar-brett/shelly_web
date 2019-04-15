@@ -41,6 +41,6 @@ html {
 }
 
 .main-content {
-    background-color: yellow;
+    background-color: white;
 }
 </style>
