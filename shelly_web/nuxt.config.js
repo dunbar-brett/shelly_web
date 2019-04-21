@@ -45,7 +45,9 @@ export default {
   ** Global CSS
   */
   css: [
-    'bootstrap/dist/css/bootstrap.css'
+    'bootstrap/dist/css/bootstrap.css',
+    '@/assets/css/main.css',
+    '@/assets/scss/main.scss'
   ],
 
   /*

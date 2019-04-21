@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="sjw-web">
         <TheHeader/>
         <main class="main-content">
             <nuxt/>
@@ -21,9 +21,9 @@ export default {
 </script>
 
 
-<style>
+<style lang="scss">
 html {
-    font-family: "Lato", sans-serif;
+    background: darkslategrey;
     font-size: 16px;
     word-spacing: 1px;
     -ms-text-size-adjust: 100%;
@@ -31,6 +31,10 @@ html {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     box-sizing: border-box;
+}
+.sjw-web {
+    font-family: "Lato", sans-serif;
+    background: darkslategrey;
 }
 
 *,

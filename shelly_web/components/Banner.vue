@@ -11,24 +11,24 @@
         </ol>
         <div class="carousel-inner sjw-carousel-inner" role="listbox">
             <!-- repeat this -->
-            <div class="carousel-item active">
+            <div class="carousel-item active sjw-carousel-item">
                 <img src="~/assets/images/banner/squished-face.png"
                      class="d-block w-100" alt="First Slide">
             </div>
 
-            <div class="carousel-item">
+            <div class="carousel-item sjw-carousel-item">
                 <img src="~/assets/images/banner/mountain.png"
                      class="d-block w-100" alt="Second Slide">
             </div>
             <!-- controls -->
-            <a href="#main-slideshow" 
+            <a href="#main-slideshow sjw-carousel-item" 
                class="carousel-control-prev"
                role="button"
                data-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <a href="#main-slideshow" 
+            <a href="#main-slideshow sjw-carousel-item" 
                class="carousel-control-next"
                role="button"
                data-slide="next">
@@ -55,11 +55,9 @@ export default {
 <style lang="scss">
 #main-slideshow {
     min-width: 100%;
-    margin: 0 -10.3rem;
-
+    
     .sjw-carousel-inner {
-        min-height: 65rem;  
-        max-height: 65rem;
+        max-height: 70rem;
     }
 }
 </style>

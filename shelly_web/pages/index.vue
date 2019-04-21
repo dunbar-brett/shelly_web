@@ -1,5 +1,5 @@
 <template>
-    <section class="container">
+    <section class="container-fluid sjw-banner-wrapper">
         <banner/>
     </section>
 </template>
@@ -14,5 +14,9 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+.sjw-banner-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+}
 </style>
